@@ -1,3 +1,4 @@
+//Commentario añadido
 package edu.ncsu.monopoly;
 //aldaketa berria  
 public abstract class Card {
