@@ -20,9 +20,9 @@ public class UtilDiceRoll extends JDialog {
 		return dialog.diceValue;
 	}
 	JButton btnDice = new JButton("Roll the Dice!");
-	private JButton btnOK = new JButton("OK");
+	private final JButton btnOK = new JButton("OK");
 	private int diceValue;
-	private JLabel lblPrompt = new JLabel();
+	private final JLabel lblPrompt = new JLabel();
 
 	public UtilDiceRoll() {
 		setModal(true);

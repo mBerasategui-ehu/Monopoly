@@ -8,11 +8,11 @@ public class GameMaster {
 
 	private static GameMaster gameMaster;
 	static final public int MAX_PLAYER = 8;	
-	private Die[] dice;
+	private final Die[] dice;
 	private GameBoard gameBoard;
 	private MonopolyGUI gui;
 	private int initAmountOfMoney;
-	private ArrayList players = new ArrayList();
+	private final ArrayList players = new ArrayList();
 	private int turn = 0;
 	private int utilDiceRoll;
 	private boolean testMode;
@@ -97,13 +97,12 @@ public class GameMaster {
 		if((rolls[0]+rolls[1]) > 0) {
 			Player player = getCurrentPlayer();
 			gui.setRollDiceEnabled(false);
-			StringBuffer msg = new StringBuffer();
-			msg.append(player.getName())
-					.append(", you rolled ")
-					.append(rolls[0])
-					.append(" and ")
-					.append(rolls[1]);
-			gui.showMessage(msg.toString());
+            String msg = player.getName() +
+                    ", you rolled " +
+                    rolls[0] +
+                    " and " +
+                    rolls[1];
+			gui.showMessage(msg);
 			movePlayer(player, rolls[0] + rolls[1]);
 			gui.setBuyHouseEnabled(false);
 		}

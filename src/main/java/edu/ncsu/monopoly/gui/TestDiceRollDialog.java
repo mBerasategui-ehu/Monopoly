@@ -14,8 +14,9 @@ import javax.swing.JTextField;
 
 
 public class TestDiceRollDialog extends JDialog {
-    private JButton btnOK, btnCancel;
-    private JTextField txtDiceRoll;
+    private final JButton btnOK;
+    private final JButton btnCancel;
+    private final JTextField txtDiceRoll;
     private int[] diceRoll;
     
     public TestDiceRollDialog(Frame parent) {

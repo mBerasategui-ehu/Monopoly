@@ -20,20 +20,20 @@ import edu.ncsu.monopoly.Player;
 
 public class PlayerPanel extends JPanel {
 
-    private JButton btnBuyHouse;
-    private JButton btnDrawCard;
-    private JButton btnEndTurn;
-    private JButton btnGetOutOfJail;
-    private JButton btnPurchaseProperty;
-    private JButton btnRollDice;
-    private JButton btnTrade;
+    private final JButton btnBuyHouse;
+    private final JButton btnDrawCard;
+    private final JButton btnEndTurn;
+    private final JButton btnGetOutOfJail;
+    private final JButton btnPurchaseProperty;
+    private final JButton btnRollDice;
+    private final JButton btnTrade;
     
-    private JLabel lblMoney;
-    private JLabel lblName;
+    private final JLabel lblMoney;
+    private final JLabel lblName;
     
-    private Player player;
+    private final Player player;
     
-    private JTextArea txtProperty;
+    private final JTextArea txtProperty;
 
     public PlayerPanel(Player player) {
         JPanel pnlAction = new JPanel();

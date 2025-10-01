@@ -2,7 +2,7 @@ package edu.ncsu.monopoly;
 
 public class MockGUI implements MonopolyGUI {
     private boolean btnDrawCardState, btnEndTurnState, btnGetOutOfJailState;
-    private boolean[] btnTradeState = new boolean[2];
+    private final boolean[] btnTradeState = new boolean[2];
 
     public void enableEndTurnBtn(int playerIndex) {
     }
@@ -13,7 +13,7 @@ public class MockGUI implements MonopolyGUI {
     public void enablePurchaseBtn(int playerIndex) {
     }
 	public int[] getDiceRoll() {
-		int roll[] = new int[2];
+		int[] roll = new int[2];
 		roll[0] = 2;
 		roll[1] = 3;
 		return roll;
